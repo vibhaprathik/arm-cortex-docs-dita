@@ -1,1 +1,21 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="gpio-overview' xml:lang="en">
+  <title>Understand GPIO on Cortex-M based microcontrollers</title>
+  <shortdesc>General-purpose input/output (GPIO) peripherals allow software to monitor and control physical pins on a microcontroller.</shortdesc>
+  <conbody>
+    <p>A microcontroller can contain an Arm Cortex-M processor alongside memory and peripherals. GPIO is typically one of those peripherals, not a feature of the processor core itself.</p>
+    <section>
+      <title>GPIO input and output</title>
+      <ul>
+        <li><p><b>Input:</b> Software reads a pin state, such as whether a button is pressed.</p></li>
+        <li><p><b>Output:</b> Software sets a pin state, such as driving a connected indicator LED, subject to the board's electrical design.</p></li>
+      </ul>
+    </section>
+    <section>
+      <title>Device-specific configuration</title>
+      <p>The available pins, GPIO registers, pin multiplexing, electrical limits, and configuration procedure depend on the microcontroller and board. Before following a configuration procedure, consult the device reference manual and board documentation.</p>
+      <p>Some devices provide a software driver interface for GPIO. The Arm CMSIS-Driver GPIO interface, when implemented for the device, defines operations for pin configuration, output control, and input reading.</p>
+    </section>
+  </conbody>
+</concept>
